@@ -81,6 +81,7 @@ power_via_scoreCIs <-
           r.adj <-
             try(
               uniroot(
+                lower=0,
                 f = function(x)
                   round(vec[1]) -
                   x * vec[1],
